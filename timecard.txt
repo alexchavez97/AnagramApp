@@ -1,0 +1,26 @@
+Meeting 1: 30 minutes
+Meeting 2: 30 minutes
+
+Session 1: 1 hour
+Created UI Using bootstrap.
+
+Session 2: 2 hours
+Created word scrambler function to take in a word and randomly scramble it.
+
+Session 3: 1 hour
+Researched the javascript date and time functions. Found a library to help
+keep time spent on each anagram.
+
+Session 4: 1.5 hours
+Implemented the functions from the timer library in the app. Works very well.
+
+Session 5: 2 hours
+Cleaned the code to make it more readable and easier to debug.
+
+Session 6: 2 hours
+Researched API's for sending emails.
+
+Session 7: 1 hour
+Added form validation.
+
+session 8: 
