@@ -261,14 +261,14 @@ $(document).ready(function(){
   });
 
 
-    adTimer1.every(3000/9,function(){
+    adTimer1.every(3000/8,function(){
       $(".content").addClass("hidden");
       $(".ad1").attr("src",ad1);
       $("#advertisement1").show();
       timer.stop();
     });
 
-    adTimer1.every(6000/9,function(){
+    adTimer1.every(6000/8,function(){
       $("#advertisement1").hide();
       $(".ad1").removeAttr("src");
       adTimer1.stop();
@@ -276,14 +276,14 @@ $(document).ready(function(){
       adTimer2.start();
     });
 
-    adTimer2.every(3000,function(){
+    adTimer2.every(3000/8,function(){
       $(".content").addClass("hidden");
       $(".ad2").attr("src",ad2)
       $("#advertisement2").show();
       timer.stop();
     });
 
-    adTimer2.every(6000,function(){
+    adTimer2.every(6000/8,function(){
       $("#advertisement2").hide();
       $(".ad2").removeAttr("src");
       adTimer2.stop();
