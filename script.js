@@ -261,14 +261,14 @@ $(document).ready(function(){
   });
 
 
-    adTimer1.every(3000,function(){
+    adTimer1.every(3000/9,function(){
       $(".content").addClass("hidden");
       $(".ad1").attr("src",ad1);
       $("#advertisement1").show();
       timer.stop();
     });
 
-    adTimer1.every(6000,function(){
+    adTimer1.every(6000/9,function(){
       $("#advertisement1").hide();
       $(".ad1").removeAttr("src");
       adTimer1.stop();
