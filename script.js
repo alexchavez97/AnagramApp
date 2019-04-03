@@ -136,15 +136,17 @@ var displayTime = function(){
 // know what ad popped up with the time stamp
 // ad only shown once.
 
-
-
 $(document).ready(function(){
 
-  // overallTimer.every(180000){
-  //   $(".stopbutton").show()
-  // }
+
+  overallTimer.start();
+
+  overallTimer.every(180000, function(){
+    $(".stopbutton").show()
+  });
 
   $("#home").show();
+  $(".stopbutton").hide();
 
   $(".button1").click(function(){
     $(".content").hide();
@@ -175,7 +177,6 @@ $(document).ready(function(){
     $("#scramble1").show();
     $(".stopbutton").hide();
     $(".anagram1").html(scrambler(word1));
-    overallTimer.start();
     timer.start();
     adTimer1.start();
   });
@@ -262,12 +263,12 @@ $(document).ready(function(){
 
     adTimer1.every(3000,function(){
       $(".content").addClass("hidden");
-      $(".ad1").attr("src","ads/ad1.jpg");
+      $(".ad1").attr("src",ad1);
       $("#advertisement1").show();
       timer.stop();
     });
 
-    adTimer1.every(24000,function(){
+    adTimer1.every(6000,function(){
       $("#advertisement1").hide();
       $(".ad1").removeAttr("src");
       adTimer1.stop();
@@ -275,121 +276,121 @@ $(document).ready(function(){
       adTimer2.start();
     });
 
-    adTimer2.every(12000,function(){
+    adTimer2.every(3000,function(){
       $(".content").addClass("hidden");
-      $(".ad1").attr("src",ad2)
-      $("#advertisement1").show();
+      $(".ad2").attr("src",ad2)
+      $("#advertisement2").show();
       timer.stop();
     });
 
-    adTimer2.every(24000,function(){
-      $("#advertisement1").hide();
-      $(".ad1").removeAttr("src");
+    adTimer2.every(6000,function(){
+      $("#advertisement2").hide();
+      $(".ad2").removeAttr("src");
       adTimer2.stop();
       timer.start();
       adTimer3.start();
     });
 
-    adTimer3.every(12000,function(){
+    adTimer3.every(3000,function(){
       $(".content").addClass("hidden");
-      $(".ad1").attr("src",ad3)
-      $("#advertisement1").show();
+      $(".ad3").attr("src",ad3)
+      $("#advertisement3").show();
       timer.stop();
     });
 
-    adTimer3.every(24000,function(){
-      $("#advertisement1").hide();
-      $(".ad1").removeAttr("src");
+    adTimer3.every(6000,function(){
+      $("#advertisement3").hide();
+      $(".ad3").removeAttr("src");
       adTimer3.stop();
       timer.start();
       adTimer4.start();
     });
 
-    adTimer4.every(12000,function(){
+    adTimer4.every(3000,function(){
       $(".content").addClass("hidden");
-      $(".ad1").attr("src",ad4)
-      $("#advertisement1").show();
+      $(".ad4").attr("src",ad4)
+      $("#advertisement4").show();
       timer.stop();
     });
 
-    adTimer4.every(24000,function(){
-      $("#advertisement1").hide();
-      $(".ad1").removeAttr("src");
+    adTimer4.every(6000,function(){
+      $("#advertisement4").hide();
+      $(".ad4").removeAttr("src");
       adTimer4.stop();
       timer.start();
       adTimer5.start();
     });
 
-    adTimer5.every(12000,function(){
+    adTimer5.every(3000,function(){
       $(".content").addClass("hidden");
-      $(".ad1").attr("src",ad5)
-      $("#advertisement1").show();
+      $(".ad5").attr("src",ad5)
+      $("#advertisement5").show();
       timer.stop();
     });
 
-    adTimer5.every(24000,function(){
-      $("#advertisement1").hide();
-      $(".ad1").removeAttr("src");
+    adTimer5.every(6000,function(){
+      $("#advertisement5").hide();
+      $(".ad5").removeAttr("src");
       adTimer5.stop();
       timer.start();
       adTimer6.start();
     });
 
-    adTimer6.every(12000,function(){
+    adTimer6.every(3000,function(){
       $(".content").addClass("hidden");
-      $(".ad1").attr("src",ad6)
-      $("#advertisement1").show();
+      $(".ad6").attr("src",ad6)
+      $("#advertisement6").show();
       timer.stop();
     });
 
-    adTimer6.every(24000,function(){
-      $("#advertisement1").hide();
-      $(".ad1").removeAttr("src");
+    adTimer6.every(6000,function(){
+      $("#advertisement6").hide();
+      $(".ad6").removeAttr("src");
       adTimer6.stop();
       timer.start();
       adTimer7.start();
     });
 
-    adTimer7.every(12000,function(){
+    adTimer7.every(3000,function(){
       $(".content").addClass("hidden");
-      $(".ad1").attr("src",ad7)
-      $("#advertisement1").show();
+      $(".ad7").attr("src",ad7)
+      $("#advertisement7").show();
       timer.stop();
     });
 
-    adTimer7.every(24000,function(){
-      $("#advertisement1").hide();
+    adTimer7.every(6000,function(){
+      $("#advertisement7").hide();
       $(".ad1").removeAttr("src");
       adTimer7.stop();
       timer.start();
       adTimer8.start();
     });
 
-    adTimer8.every(12000,function(){
+    adTimer8.every(3000,function(){
       $(".content").addClass("hidden");
-      $(".ad1").attr("src",ad8)
-      $("#advertisement1").show();
+      $(".ad8").attr("src",ad8)
+      $("#advertisement8").show();
       timer.stop();
     });
 
-    adTimer8.every(24000,function(){
-      $("#advertisement1").hide();
-      $(".ad1").removeAttr("src");
+    adTimer8.every(6000,function(){
+      $("#advertisement8").hide();
+      $(".ad8").removeAttr("src");
       adTimer8.stop();
       timer.start();
       adTimer9.start();
     });
 
-    adTimer9.every(12000,function(){
+    adTimer9.every(3000,function(){
       $(".content").addClass("hidden");
-      $(".ad1").attr("src",ad9)
-      $("#advertisement1").show();
+      $(".ad9").attr("src",ad9)
+      $("#advertisement9").show();
       timer.stop();
     });
 
-    adTimer9.every(24000,function(){
-      $("#advertisement1").hide();
-      $(".ad1").removeAttr("src");
+    adTimer9.every(6000,function(){
+      $("#advertisement9").hide();
+      $(".ad9").removeAttr("src");
       adTimer9.stop();
       timer.start();
     });
